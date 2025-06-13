@@ -1,0 +1,15 @@
+Época 1/20
+Downloading https://data.pyg.org/datasets/MNISTSuperpixels.zip
+Extracting data\raw\MNISTSuperpixels.zip
+Processing...
+Done!
+Dimensión de entrada: 1
+Número de clases: 10
+Tamaño del dataset de entrenamiento: 60000
+Label: tensor([5])
+Número de nodos: 75
+Dimensiones de características: torch.Size([75, 1])
+Posiciones: torch.Size([75, 2])
+Dimensión de entrada: 1
+Número de clases: 10
+Tamaño del dataset de entrenamiento: 60000

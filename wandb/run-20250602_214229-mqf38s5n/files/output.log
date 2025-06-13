@@ -1,0 +1,14 @@
+Época 1/5
+Época 2/5
+Época 3/5
+Época 4/5
+Época 5/5
+Modelo guardado como 'modelo_gnn_mnist.pth'
+=== Información del Dataset ===
+Características del nodo (x): torch.Size([75, 1])
+Posiciones (pos): torch.Size([75, 2])
+Dimensiones concatenadas: torch.Size([75, 3])
+Número de nodos: 75
+Aristas: torch.Size([2, 1399])
+Etiqueta: tensor([5])
+Dimensiones de entrada correctas: 3

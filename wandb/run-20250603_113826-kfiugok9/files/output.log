@@ -1,0 +1,113 @@
+Época 1/20
+Época 2/20
+Época 3/20
+Época 4/20
+Época 5/20
+Época 6/20
+Época 7/20
+Época 8/20
+Época 9/20
+Época 10/20
+Época 11/20
+Época 12/20
+Época 13/20
+Época 14/20
+Época 15/20
+Época 16/20
+Época 17/20
+Época 18/20
+Época 19/20
+Época 20/20
+Modelo guardado como 'modelo_gnn_mnist.pth'
+torch.Size([1, 28, 28])
+=== Información del Dataset ===
+Características del nodo (x): torch.Size([75, 1])
+Posiciones (pos): torch.Size([75, 2])
+Dimensiones concatenadas: torch.Size([75, 3])
+Número de nodos: 75
+Aristas: torch.Size([2, 1399])
+Etiqueta: tensor([5])
+Dimensiones de entrada correctas: 3
+torch.Size([1, 28, 28])
+=== Información del Dataset ===
+Características del nodo (x): torch.Size([75, 1])
+Posiciones (pos): torch.Size([75, 2])
+Dimensiones concatenadas: torch.Size([75, 3])
+Número de nodos: 75
+Aristas: torch.Size([2, 1399])
+Etiqueta: tensor([5])
+Dimensiones de entrada correctas: 3
+Shape de x: torch.Size([75, 1])
+GATConv(3, 152, heads=1)
+torch.Size([69, 3])
+Etiqueta real: 7
+Predicción del modelo: 0
+Etiqueta real: 7
+Predicción del modelo: 0
+Etiqueta real: 0
+Predicción del modelo: 0
+Etiqueta real: 1
+Predicción del modelo: 0
+torch.Size([71, 3])
+torch.Size([2, 430])
+torch.Size([71])
+Etiqueta real: 1
+Predicción del modelo: 0
+Etiqueta real: 1
+Predicción del modelo: 0
+Shape de x: torch.Size([75, 1])
+Batch x shape: torch.Size([75, 1])
+torch.Size([69, 3])
+torch.Size([69, 3])
+Etiqueta real: 0
+Predicción del modelo: 0
+Batch x shape: torch.Size([4800, 1])
+torch.Size([69, 3])
+Etiqueta real: 1
+Predicción del modelo: 0
+Etiqueta real: 7
+Predicción del modelo: 0
+=== Información del Dataset ===
+Características del nodo (x): torch.Size([75, 1])
+Posiciones (pos): torch.Size([75, 2])
+Dimensiones concatenadas: torch.Size([75, 3])
+Número de nodos: 75
+Aristas: torch.Size([2, 1399])
+Etiqueta: tensor([5])
+Dimensiones de entrada correctas: 3
+=== Información del Dataset ===
+Características del nodo (x): torch.Size([75, 1])
+Posiciones (pos): torch.Size([75, 2])
+Dimensiones concatenadas: torch.Size([75, 3])
+Número de nodos: 75
+Aristas: torch.Size([2, 1399])
+Etiqueta: tensor([5])
+Dimensiones de entrada correctas: 3
+Label: tensor([5])
+Número de nodos: 75
+Dimensiones de características: torch.Size([75, 1])
+Posiciones: torch.Size([75, 2])
+Label: tensor([5])
+Número de nodos: 75
+Dimensiones de características: torch.Size([75, 1])
+Posiciones: torch.Size([75, 2])
+=== Información del Dataset ===
+Características del nodo (x): torch.Size([75, 1])
+Posiciones (pos): torch.Size([75, 2])
+Dimensiones concatenadas: torch.Size([75, 3])
+Número de nodos: 75
+Aristas: torch.Size([2, 1399])
+Etiqueta: tensor([5])
+Dimensiones de entrada correctas: 3
+Label: tensor([5])
+Número de nodos: 75
+Dimensiones de características: torch.Size([75, 1])
+Posiciones: torch.Size([75, 2])
+=== Información del Dataset ===
+Características del nodo (x): torch.Size([75, 1])
+Posiciones (pos): torch.Size([75, 2])
+Dimensiones concatenadas: torch.Size([75, 3])
+Número de nodos: 75
+Aristas: torch.Size([2, 1399])
+Etiqueta: tensor([5])
+Dimensiones de entrada correctas: 3

@@ -1,0 +1,16 @@
+{"time":"2025-05-31T17:14:55.1649897-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\Usuario\\Trabajo Discretas pt2\\wandb\\run-20250531_171454-kkon0x39\\logs\\debug-core.log"}
+{"time":"2025-05-31T17:14:55.47101-06:00","level":"INFO","msg":"created new stream","id":"kkon0x39"}
+{"time":"2025-05-31T17:14:55.47101-06:00","level":"INFO","msg":"stream: started","id":"kkon0x39"}
+{"time":"2025-05-31T17:14:55.47101-06:00","level":"INFO","msg":"sender: started","stream_id":"kkon0x39"}
+{"time":"2025-05-31T17:14:55.47101-06:00","level":"INFO","msg":"handler: started","stream_id":"kkon0x39"}
+{"time":"2025-05-31T17:14:55.47101-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"kkon0x39"}
+{"time":"2025-05-31T17:14:55.6749926-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-31T17:17:25.2006123-06:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-31T17:17:25.2011527-06:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-31T17:17:25.8845081-06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-31T17:17:26.1134362-06:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-05-31T17:17:26.118319-06:00","level":"INFO","msg":"stream: closing","id":"kkon0x39"}
+{"time":"2025-05-31T17:17:26.118319-06:00","level":"INFO","msg":"handler: closed","stream_id":"kkon0x39"}
+{"time":"2025-05-31T17:17:26.118319-06:00","level":"INFO","msg":"sender: closed","stream_id":"kkon0x39"}
+{"time":"2025-05-31T17:17:26.118319-06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"kkon0x39"}
+{"time":"2025-05-31T17:17:26.118319-06:00","level":"INFO","msg":"stream: closed","id":"kkon0x39"}

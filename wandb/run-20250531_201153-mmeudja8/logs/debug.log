@@ -1,0 +1,836 @@
+2025-05-31 20:11:53,853 INFO    MainThread:13980 [wandb_setup.py:_flush():70] Current SDK version is 0.19.11
+2025-05-31 20:11:53,853 INFO    MainThread:13980 [wandb_setup.py:_flush():70] Configure stats pid to 13980
+2025-05-31 20:11:53,853 INFO    MainThread:13980 [wandb_setup.py:_flush():70] Loading settings from C:\Users\Usuario\.config\wandb\settings
+2025-05-31 20:11:53,854 INFO    MainThread:13980 [wandb_setup.py:_flush():70] Loading settings from C:\Users\Usuario\Trabajo Discretas pt2\wandb\settings
+2025-05-31 20:11:53,854 INFO    MainThread:13980 [wandb_setup.py:_flush():70] Loading settings from environment variables
+2025-05-31 20:11:53,854 INFO    MainThread:13980 [wandb_init.py:setup_run_log_directory():724] Logging user logs to C:\Users\Usuario\Trabajo Discretas pt2\wandb\run-20250531_201153-mmeudja8\logs\debug.log
+2025-05-31 20:11:53,854 INFO    MainThread:13980 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to C:\Users\Usuario\Trabajo Discretas pt2\wandb\run-20250531_201153-mmeudja8\logs\debug-internal.log
+2025-05-31 20:11:53,854 INFO    MainThread:13980 [wandb_init.py:monkeypatch_ipython():643] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000002B9570D7D00>
+2025-05-31 20:11:53,854 INFO    MainThread:13980 [wandb_init.py:init():852] calling init triggers
+2025-05-31 20:11:53,854 INFO    MainThread:13980 [wandb_init.py:init():857] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-05-31 20:11:53,854 INFO    MainThread:13980 [wandb_init.py:init():893] starting backend
+2025-05-31 20:11:53,855 INFO    MainThread:13980 [wandb_init.py:init():897] sending inform_init request
+2025-05-31 20:11:53,926 INFO    MainThread:13980 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-05-31 20:11:53,926 INFO    MainThread:13980 [wandb_init.py:init():907] backend started and connected
+2025-05-31 20:11:53,928 INFO    MainThread:13980 [wandb_run.py:_label_probe_notebook():1376] probe notebook
+2025-05-31 20:11:53,929 INFO    MainThread:13980 [wandb_run.py:_label_probe_notebook():1386] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2025-05-31 20:11:53,929 INFO    MainThread:13980 [wandb_init.py:init():1005] updated telemetry
+2025-05-31 20:11:53,931 INFO    MainThread:13980 [wandb_init.py:init():1029] communicating run to backend with 90.0 second timeout
+2025-05-31 20:11:54,420 INFO    MainThread:13980 [wandb_init.py:init():1104] starting run threads in backend
+2025-05-31 20:11:54,606 INFO    MainThread:13980 [wandb_run.py:_console_start():2573] atexit reg
+2025-05-31 20:11:54,606 INFO    MainThread:13980 [wandb_run.py:_redirect():2421] redirect: wrap_raw
+2025-05-31 20:11:54,606 INFO    MainThread:13980 [wandb_run.py:_redirect():2490] Wrapping output streams.
+2025-05-31 20:11:54,606 INFO    MainThread:13980 [wandb_run.py:_redirect():2513] Redirects installed.
+2025-05-31 20:11:54,612 INFO    MainThread:13980 [wandb_init.py:init():1150] run started, returning control to user process
+2025-05-31 20:11:54,613 INFO    MainThread:13980 [wandb_run.py:_config_callback():1436] config_cb None None {'batch_size': 64, 'epochs': 10, 'device': 'cpu', 'hidden_dim': 152, 'lr': 0.001}
+2025-05-31 20:22:52,179 INFO    MainThread:13980 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-05-31 20:22:56,892 WARNING MsgRouterThr:13980 [router.py:message_loop():63] [no run ID] message_loop has been closed
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 208, in _read_packet_bytes
+    data = self._sock.recv(self._bufsize)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\router_sock.py", line 27, in _read_message
+    return self._sock_client.read_server_response(timeout=1)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 235, in read_server_response
+    data = self._read_packet_bytes(timeout=timeout)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 212, in _read_packet_bytes
+    raise SockClientClosedError from e
+wandb.sdk.lib.sock_client.SockClientClosedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\router.py", line 56, in message_loop
+    msg = self._read_message()
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\router_sock.py", line 29, in _read_message
+    raise MessageRouterClosedError from e
+wandb.sdk.interface.router.MessageRouterClosedError
+2025-05-31 20:22:56,896 INFO    MsgRouterThr:13980 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-31 20:22:56,934 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,944 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,946 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,947 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,948 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,948 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,950 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,950 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,951 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,951 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,952 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,953 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,954 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,954 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,955 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,956 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,957 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,957 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,958 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,959 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,959 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,960 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,961 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,962 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,962 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,963 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,964 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,964 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-31 20:22:56,965 ERROR   MainThread:13980 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 2500, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\wandb_run.py", line 1639, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface.py", line 762, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host

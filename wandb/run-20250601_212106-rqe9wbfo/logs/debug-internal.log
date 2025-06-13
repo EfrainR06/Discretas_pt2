@@ -1,0 +1,22 @@
+{"time":"2025-06-01T21:21:06.8316218-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\Usuario\\Trabajo Discretas pt2\\wandb\\run-20250601_212106-rqe9wbfo\\logs\\debug-core.log"}
+{"time":"2025-06-01T21:21:07.2736621-06:00","level":"INFO","msg":"created new stream","id":"rqe9wbfo"}
+{"time":"2025-06-01T21:21:07.2736621-06:00","level":"INFO","msg":"stream: started","id":"rqe9wbfo"}
+{"time":"2025-06-01T21:21:07.2736621-06:00","level":"INFO","msg":"sender: started","stream_id":"rqe9wbfo"}
+{"time":"2025-06-01T21:21:07.2736621-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"rqe9wbfo"}
+{"time":"2025-06-01T21:21:07.2736621-06:00","level":"INFO","msg":"handler: started","stream_id":"rqe9wbfo"}
+{"time":"2025-06-01T21:21:10.213935-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-02T12:57:59.1324599-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/mnist-superpixels-gnn-classification/rqe9wbfo/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-02T12:58:01.2195704-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/mnist-superpixels-gnn-classification/rqe9wbfo/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-02T12:58:02.9157509-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-02T12:58:05.1276154-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-02T12:58:05.2536142-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/mnist-superpixels-gnn-classification/rqe9wbfo/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-02T12:58:09.7176077-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-02T12:58:14.1809742-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/mnist-superpixels-gnn-classification/rqe9wbfo/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-02T12:58:19.1154344-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-02T20:35:15.5867062-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/mnist-superpixels-gnn-classification/rqe9wbfo/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-02T20:35:18.1147668-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/mnist-superpixels-gnn-classification/rqe9wbfo/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-02T20:35:22.8131158-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/mnist-superpixels-gnn-classification/rqe9wbfo/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-02T20:35:26.0849079-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-02T20:35:28.5724092-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-02T20:35:31.0455695-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/mnist-superpixels-gnn-classification/rqe9wbfo/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-02T20:35:32.7975898-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}

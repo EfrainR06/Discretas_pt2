@@ -1,0 +1,4 @@
+Label: tensor([5])
+Número de nodos: 75
+Dimensiones de características: torch.Size([75, 1])
+Posiciones: torch.Size([75, 2])

@@ -1,0 +1,344 @@
+Época 1/20
+torch.Size([69, 3])
+x0 shape después de concatenar: torch.Size([75, 3])
+Etiqueta real: 7
+Predicción: 7
+x0 shape después de concatenar: torch.Size([75, 3])
+Etiqueta real: 9
+Predicción del modelo: 8 (confianza: 37.96%)
+x0 shape después de concatenar: torch.Size([75, 3])
+Etiqueta real: 7
+Predicción: 7 (confianza: 37.96%)
+x0 shape después de concatenar: torch.Size([75, 3])
+Etiqueta real: 7
+Predicción: 7 (confianza: 92.85%)
+x0 shape después de concatenar: torch.Size([75, 3])
+Etiqueta real: 9
+Predicción del modelo: 8 (confianza: 37.96%)
+x0 shape después de concatenar: torch.Size([75, 3])
+Etiqueta real: 0
+Predicción del modelo: 0 (confianza: 72.28%)
+x0 shape después de concatenar: torch.Size([79, 5])
+DEBUG: x shape = (79, 3)
+DEBUG: pyg_data.x shape = torch.Size([79, 3])
+x0 shape después de concatenar: torch.Size([79, 5])
+DEBUG: x shape = (79, 3)
+DEBUG: pyg_data.x shape = torch.Size([79, 3])
+x0 shape después de concatenar: torch.Size([79, 5])
+DEBUG: x shape = (79, 3)
+DEBUG: pyg_data.x shape = torch.Size([79, 3])
+DEBUG: pyg_data.pos shape = torch.Size([79, 2])
+x0 shape después de concatenar: torch.Size([79, 5])
+DEBUG: x shape = (79, 3)
+DEBUG: pyg_data.x shape = torch.Size([79, 3])
+DEBUG: pyg_data.pos shape = torch.Size([79, 2])
+Características del grafo: torch.Size([79, 3])
+x0 shape después de concatenar: torch.Size([79, 5])
+Error: mat1 and mat2 shapes cannot be multiplied (79x5 and 3x152)
+Traceback (most recent call last):
+  File "C:\Users\Usuario\AppData\Local\Temp\ipykernel_13324\3651166182.py", line 23, in <module>
+    output = model(batch)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Usuario\AppData\Local\Temp\ipykernel_13324\3753517620.py", line 44, in forward
+    x1 = self.conv1(x0, edge_index)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\torch_geometric\nn\conv\gat_conv.py", line 302, in forward
+    x_src = x_dst = self.lin(x).view(-1, H, C)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Anaconda3\envs\AntorchaPy\lib\site-packages\torch_geometric\nn\dense\linear.py", line 147, in forward
+    return F.linear(x, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (79x5 and 3x152)
+DEBUG: x shape = (79, 3)
+DEBUG: pyg_data.x shape = torch.Size([79, 3])
+DEBUG: pyg_data.pos shape = torch.Size([79, 2])
+x0 shape después de concatenar: torch.Size([79, 5])
+=== PROBANDO CON FORMATO COMPATIBLE ===
+DEBUG: x shape = (79, 5)
+DEBUG: pyg_data.x shape = torch.Size([79, 5])
+DEBUG: pyg_data.pos shape = torch.Size([79, 2])
+Características después de recortar: torch.Size([79, 3])
+x0 shape después de concatenar: torch.Size([79, 5])
+DEBUG: pyg_data.x shape = torch.Size([79, 3]) (debe ser [num_nodos, 3])
+DEBUG: pyg_data.pos shape = torch.Size([79, 2])
+x0 shape después de concatenar: torch.Size([79, 5])
+DEBUG: pyg_data.x shape = torch.Size([78, 3]) (debe ser [num_nodos, 3])
+DEBUG: pyg_data.pos shape = torch.Size([78, 2])
+x0 shape después de concatenar: torch.Size([78, 5])
+x0 shape después de concatenar: torch.Size([78, 5])
+x0 shape después de concatenar: torch.Size([78, 5])
+x0 shape después de concatenar: torch.Size([79, 5])
+x0 shape después de concatenar: torch.Size([79, 5])
+C:\Users\Usuario\AppData\Local\Temp\ipykernel_13324\1831221449.py:24: RuntimeWarning: Mean of empty slice.
+  color_mean = img_lab[mask].mean(axis=0)
+C:\Anaconda3\envs\AntorchaPy\lib\site-packages\numpy\core\_methods.py:121: RuntimeWarning: invalid value encountered in divide
+  ret = um.true_divide(
+C:\Users\Usuario\AppData\Local\Temp\ipykernel_13324\1831221449.py:25: RuntimeWarning: Mean of empty slice.
+  pos_mean = np.argwhere(mask).mean(axis=0)  # (y, x)
+C:\Users\Usuario\AppData\Local\Temp\ipykernel_13324\1831221449.py:29: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_new.cpp:257.)
+  x = torch.tensor(features, dtype=torch.float)
+=== DIAGNÓSTICO DE DATOS ===
+=== PROCESANDO IMAGEN ===
+Features array shape: (80, 3)
+Positions array shape: (80, 2)
+Number of nodes detected: 80
+Features sample: [[ 0.000000e+00  0.000000e+00  0.000000e+00]
+ [ 1.000000e+02 -2.454938e-03  4.653421e-03]
+ [ 1.000000e+02 -2.454938e-03  4.653421e-03]]
+Positions sample: [[0.  0. ]
+ [1.  1. ]
+ [3.9 1.2]]
+Final x tensor shape: torch.Size([80, 3])
+Final pos tensor shape: torch.Size([80, 2])
+
+Tipo de data: <class 'torch_geometric.data.data.Data'>
+Atributos de data: ['__abstractmethods__', '__annotations__', '__call__', '__cat_dim__', '__class__', '__contains__', '__copy__', '__deepcopy__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__inc__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__setstate__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '__weakref__', '_abc_impl', '_edge_attr_cls', '_edge_to_layout', '_edges_to_layout', '_get_edge_index', '_get_tensor', '_get_tensor_size', '_multi_get_tensor', '_put_edge_index', '_put_tensor', '_remove_edge_index', '_remove_tensor', '_store', '_tensor_attr_cls', '_to_type', 'apply', 'apply_', 'batch', 'clone', 'coalesce', 'concat', 'contains_isolated_nodes', 'contains_self_loops', 'contiguous', 'coo', 'cpu', 'csc', 'csr', 'cuda', 'debug', 'detach', 'detach_', 'edge_attr', 'edge_attrs', 'edge_index', 'edge_stores', 'edge_subgraph', 'edge_weight', 'face', 'from_dict', 'generate_ids', 'get_all_edge_attrs', 'get_all_tensor_attrs', 'get_edge_index', 'get_tensor', 'get_tensor_size', 'has_isolated_nodes', 'has_self_loops', 'is_coalesced', 'is_cuda', 'is_directed', 'is_edge_attr', 'is_node_attr', 'is_sorted', 'is_sorted_by_time', 'is_undirected', 'keys', 'multi_get_tensor', 'node_attrs', 'node_offsets', 'node_stores', 'num_edge_features', 'num_edge_types', 'num_edges', 'num_faces', 'num_features', 'num_node_features', 'num_node_types', 'num_nodes', 'pin_memory', 'pos', 'put_edge_index', 'put_tensor', 'record_stream', 'remove_edge_index', 'remove_tensor', 'requires_grad_', 'share_memory_', 'size', 'snapshot', 'sort', 'sort_by_time', 'stores', 'stores_as', 'subgraph', 'time', 'to', 'to_dict', 'to_heterogeneous', 'to_namedtuple', 'up_to', 'update', 'update_tensor', 'validate', 'view', 'x', 'y']
+=== DIAGNÓSTICO DE DATOS ===
+=== PROCESANDO IMAGEN ===
+Features array shape: (80, 3)
+Positions array shape: (80, 2)
+Number of nodes detected: 80
+Features sample: [[ 0.000000e+00  0.000000e+00  0.000000e+00]
+ [ 1.000000e+02 -2.454938e-03  4.653421e-03]
+ [ 1.000000e+02 -2.454938e-03  4.653421e-03]]
+Positions sample: [[0.  0. ]
+ [1.  1. ]
+ [3.9 1.2]]
+Final x tensor shape: torch.Size([80, 3])
+Final pos tensor shape: torch.Size([80, 2])
+
+Tipo de data: <class 'torch_geometric.data.data.Data'>
+Atributos de data: ['__abstractmethods__', '__annotations__', '__call__', '__cat_dim__', '__class__', '__contains__', '__copy__', '__deepcopy__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__inc__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__setstate__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '__weakref__', '_abc_impl', '_edge_attr_cls', '_edge_to_layout', '_edges_to_layout', '_get_edge_index', '_get_tensor', '_get_tensor_size', '_multi_get_tensor', '_put_edge_index', '_put_tensor', '_remove_edge_index', '_remove_tensor', '_store', '_tensor_attr_cls', '_to_type', 'apply', 'apply_', 'batch', 'clone', 'coalesce', 'concat', 'contains_isolated_nodes', 'contains_self_loops', 'contiguous', 'coo', 'cpu', 'csc', 'csr', 'cuda', 'debug', 'detach', 'detach_', 'edge_attr', 'edge_attrs', 'edge_index', 'edge_stores', 'edge_subgraph', 'edge_weight', 'face', 'from_dict', 'generate_ids', 'get_all_edge_attrs', 'get_all_tensor_attrs', 'get_edge_index', 'get_tensor', 'get_tensor_size', 'has_isolated_nodes', 'has_self_loops', 'is_coalesced', 'is_cuda', 'is_directed', 'is_edge_attr', 'is_node_attr', 'is_sorted', 'is_sorted_by_time', 'is_undirected', 'keys', 'multi_get_tensor', 'node_attrs', 'node_offsets', 'node_stores', 'num_edge_features', 'num_edge_types', 'num_edges', 'num_faces', 'num_features', 'num_node_features', 'num_node_types', 'num_nodes', 'pin_memory', 'pos', 'put_edge_index', 'put_tensor', 'record_stream', 'remove_edge_index', 'remove_tensor', 'requires_grad_', 'share_memory_', 'size', 'snapshot', 'sort', 'sort_by_time', 'stores', 'stores_as', 'subgraph', 'time', 'to', 'to_dict', 'to_heterogeneous', 'to_namedtuple', 'up_to', 'update', 'update_tensor', 'validate', 'view', 'x', 'y']
+=== DIAGNÓSTICO DE DATOS ===
+=== PROCESANDO IMAGEN ===
+Features array shape: (80, 3)
+Positions array shape: (80, 2)
+Number of nodes detected: 80
+Features sample: [[ 0.000000e+00  0.000000e+00  0.000000e+00]
+ [ 1.000000e+02 -2.454938e-03  4.653421e-03]
+ [ 1.000000e+02 -2.454938e-03  4.653421e-03]]
+Positions sample: [[0.  0. ]
+ [1.  1. ]
+ [3.9 1.2]]
+Final x tensor shape: torch.Size([80, 3])
+Final pos tensor shape: torch.Size([80, 2])
+
+Tipo de data: <class 'torch_geometric.data.data.Data'>
+Atributos de data: ['__abstractmethods__', '__annotations__', '__call__', '__cat_dim__', '__class__', '__contains__', '__copy__', '__deepcopy__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__inc__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__setstate__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '__weakref__', '_abc_impl', '_edge_attr_cls', '_edge_to_layout', '_edges_to_layout', '_get_edge_index', '_get_tensor', '_get_tensor_size', '_multi_get_tensor', '_put_edge_index', '_put_tensor', '_remove_edge_index', '_remove_tensor', '_store', '_tensor_attr_cls', '_to_type', 'apply', 'apply_', 'batch', 'clone', 'coalesce', 'concat', 'contains_isolated_nodes', 'contains_self_loops', 'contiguous', 'coo', 'cpu', 'csc', 'csr', 'cuda', 'debug', 'detach', 'detach_', 'edge_attr', 'edge_attrs', 'edge_index', 'edge_stores', 'edge_subgraph', 'edge_weight', 'face', 'from_dict', 'generate_ids', 'get_all_edge_attrs', 'get_all_tensor_attrs', 'get_edge_index', 'get_tensor', 'get_tensor_size', 'has_isolated_nodes', 'has_self_loops', 'is_coalesced', 'is_cuda', 'is_directed', 'is_edge_attr', 'is_node_attr', 'is_sorted', 'is_sorted_by_time', 'is_undirected', 'keys', 'multi_get_tensor', 'node_attrs', 'node_offsets', 'node_stores', 'num_edge_features', 'num_edge_types', 'num_edges', 'num_faces', 'num_features', 'num_node_features', 'num_node_types', 'num_nodes', 'pin_memory', 'pos', 'put_edge_index', 'put_tensor', 'record_stream', 'remove_edge_index', 'remove_tensor', 'requires_grad_', 'share_memory_', 'size', 'snapshot', 'sort', 'sort_by_time', 'stores', 'stores_as', 'subgraph', 'time', 'to', 'to_dict', 'to_heterogeneous', 'to_namedtuple', 'up_to', 'update', 'update_tensor', 'validate', 'view', 'x', 'y']
+=== DIAGNÓSTICO DE DATOS ===
+data.pos shape: torch.Size([80, 2])
+=== PROCESANDO IMAGEN ===
+Features array shape: (80, 3)
+Positions array shape: (80, 2)
+Number of nodes detected: 80
+Features sample: [[ 0.000000e+00  0.000000e+00  0.000000e+00]
+ [ 1.000000e+02 -2.454938e-03  4.653421e-03]
+ [ 1.000000e+02 -2.454938e-03  4.653421e-03]]
+Positions sample: [[0.  0. ]
+ [1.  1. ]
+ [3.9 1.2]]
+Final x tensor shape: torch.Size([80, 3])
+Final pos tensor shape: torch.Size([80, 2])
+
+Tipo de data: <class 'torch_geometric.data.data.Data'>
+Atributos de data: ['__abstractmethods__', '__annotations__', '__call__', '__cat_dim__', '__class__', '__contains__', '__copy__', '__deepcopy__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__inc__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__setstate__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '__weakref__', '_abc_impl', '_edge_attr_cls', '_edge_to_layout', '_edges_to_layout', '_get_edge_index', '_get_tensor', '_get_tensor_size', '_multi_get_tensor', '_put_edge_index', '_put_tensor', '_remove_edge_index', '_remove_tensor', '_store', '_tensor_attr_cls', '_to_type', 'apply', 'apply_', 'batch', 'clone', 'coalesce', 'concat', 'contains_isolated_nodes', 'contains_self_loops', 'contiguous', 'coo', 'cpu', 'csc', 'csr', 'cuda', 'debug', 'detach', 'detach_', 'edge_attr', 'edge_attrs', 'edge_index', 'edge_stores', 'edge_subgraph', 'edge_weight', 'face', 'from_dict', 'generate_ids', 'get_all_edge_attrs', 'get_all_tensor_attrs', 'get_edge_index', 'get_tensor', 'get_tensor_size', 'has_isolated_nodes', 'has_self_loops', 'is_coalesced', 'is_cuda', 'is_directed', 'is_edge_attr', 'is_node_attr', 'is_sorted', 'is_sorted_by_time', 'is_undirected', 'keys', 'multi_get_tensor', 'node_attrs', 'node_offsets', 'node_stores', 'num_edge_features', 'num_edge_types', 'num_edges', 'num_faces', 'num_features', 'num_node_features', 'num_node_types', 'num_nodes', 'pin_memory', 'pos', 'put_edge_index', 'put_tensor', 'record_stream', 'remove_edge_index', 'remove_tensor', 'requires_grad_', 'share_memory_', 'size', 'snapshot', 'sort', 'sort_by_time', 'stores', 'stores_as', 'subgraph', 'time', 'to', 'to_dict', 'to_heterogeneous', 'to_namedtuple', 'up_to', 'update', 'update_tensor', 'validate', 'view', 'x', 'y']
+=== DIAGNÓSTICO DE DATOS ===
+data.pos shape: torch.Size([80, 2])
+=== PROCESANDO IMAGEN ===
+Features array shape: (80, 3)
+Positions array shape: (80, 2)
+Number of nodes detected: 80
+Features sample: [[ 0.000000e+00  0.000000e+00  0.000000e+00]
+ [ 1.000000e+02 -2.454938e-03  4.653421e-03]
+ [ 1.000000e+02 -2.454938e-03  4.653421e-03]]
+Positions sample: [[0.  0. ]
+ [1.  1. ]
+ [3.9 1.2]]
+Final x tensor shape: torch.Size([80, 3])
+Final pos tensor shape: torch.Size([80, 2])
+
+Tipo de data: <class 'torch_geometric.data.data.Data'>
+Atributos de data: ['__abstractmethods__', '__annotations__', '__call__', '__cat_dim__', '__class__', '__contains__', '__copy__', '__deepcopy__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__inc__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__setstate__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '__weakref__', '_abc_impl', '_edge_attr_cls', '_edge_to_layout', '_edges_to_layout', '_get_edge_index', '_get_tensor', '_get_tensor_size', '_multi_get_tensor', '_put_edge_index', '_put_tensor', '_remove_edge_index', '_remove_tensor', '_store', '_tensor_attr_cls', '_to_type', 'apply', 'apply_', 'batch', 'clone', 'coalesce', 'concat', 'contains_isolated_nodes', 'contains_self_loops', 'contiguous', 'coo', 'cpu', 'csc', 'csr', 'cuda', 'debug', 'detach', 'detach_', 'edge_attr', 'edge_attrs', 'edge_index', 'edge_stores', 'edge_subgraph', 'edge_weight', 'face', 'from_dict', 'generate_ids', 'get_all_edge_attrs', 'get_all_tensor_attrs', 'get_edge_index', 'get_tensor', 'get_tensor_size', 'has_isolated_nodes', 'has_self_loops', 'is_coalesced', 'is_cuda', 'is_directed', 'is_edge_attr', 'is_node_attr', 'is_sorted', 'is_sorted_by_time', 'is_undirected', 'keys', 'multi_get_tensor', 'node_attrs', 'node_offsets', 'node_stores', 'num_edge_features', 'num_edge_types', 'num_edges', 'num_faces', 'num_features', 'num_node_features', 'num_node_types', 'num_nodes', 'pin_memory', 'pos', 'put_edge_index', 'put_tensor', 'record_stream', 'remove_edge_index', 'remove_tensor', 'requires_grad_', 'share_memory_', 'size', 'snapshot', 'sort', 'sort_by_time', 'stores', 'stores_as', 'subgraph', 'time', 'to', 'to_dict', 'to_heterogeneous', 'to_namedtuple', 'up_to', 'update', 'update_tensor', 'validate', 'view', 'x', 'y']
+=== DIAGNÓSTICO DE DATOS ===
+data.pos shape: torch.Size([80, 2])
+data.pos dimensiones: 2
+Número de nodos: 80
+Número de aristas: 336
+=== PROCESANDO IMAGEN ===
+Features array shape: (80, 3)
+Positions array shape: (80, 2)
+Number of nodes detected: 80
+Features sample: [[ 0.000000e+00  0.000000e+00  0.000000e+00]
+ [ 1.000000e+02 -2.454938e-03  4.653421e-03]
+ [ 1.000000e+02 -2.454938e-03  4.653421e-03]]
+Positions sample: [[0.  0. ]
+ [1.  1. ]
+ [3.9 1.2]]
+Final x tensor shape: torch.Size([80, 3])
+Final pos tensor shape: torch.Size([80, 2])
+
+Tipo de data: <class 'torch_geometric.data.data.Data'>
+Atributos de data: ['__abstractmethods__', '__annotations__', '__call__', '__cat_dim__', '__class__', '__contains__', '__copy__', '__deepcopy__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__inc__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__setstate__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '__weakref__', '_abc_impl', '_edge_attr_cls', '_edge_to_layout', '_edges_to_layout', '_get_edge_index', '_get_tensor', '_get_tensor_size', '_multi_get_tensor', '_put_edge_index', '_put_tensor', '_remove_edge_index', '_remove_tensor', '_store', '_tensor_attr_cls', '_to_type', 'apply', 'apply_', 'batch', 'clone', 'coalesce', 'concat', 'contains_isolated_nodes', 'contains_self_loops', 'contiguous', 'coo', 'cpu', 'csc', 'csr', 'cuda', 'debug', 'detach', 'detach_', 'edge_attr', 'edge_attrs', 'edge_index', 'edge_stores', 'edge_subgraph', 'edge_weight', 'face', 'from_dict', 'generate_ids', 'get_all_edge_attrs', 'get_all_tensor_attrs', 'get_edge_index', 'get_tensor', 'get_tensor_size', 'has_isolated_nodes', 'has_self_loops', 'is_coalesced', 'is_cuda', 'is_directed', 'is_edge_attr', 'is_node_attr', 'is_sorted', 'is_sorted_by_time', 'is_undirected', 'keys', 'multi_get_tensor', 'node_attrs', 'node_offsets', 'node_stores', 'num_edge_features', 'num_edge_types', 'num_edges', 'num_faces', 'num_features', 'num_node_features', 'num_node_types', 'num_nodes', 'pin_memory', 'pos', 'put_edge_index', 'put_tensor', 'record_stream', 'remove_edge_index', 'remove_tensor', 'requires_grad_', 'share_memory_', 'size', 'snapshot', 'sort', 'sort_by_time', 'stores', 'stores_as', 'subgraph', 'time', 'to', 'to_dict', 'to_heterogeneous', 'to_namedtuple', 'up_to', 'update', 'update_tensor', 'validate', 'view', 'x', 'y']
+=== DIAGNÓSTICO DE DATOS ===
+data.pos shape: torch.Size([80, 2])
+data.pos dimensiones: 2
+Número de nodos: 80
+Número de aristas: 336
+=== PROCESANDO IMAGEN ===
+Features array shape: (80, 3)
+Positions array shape: (80, 2)
+Number of nodes detected: 80
+Features sample: [[ 0.000000e+00  0.000000e+00  0.000000e+00]
+ [ 1.000000e+02 -2.454938e-03  4.653421e-03]
+ [ 1.000000e+02 -2.454938e-03  4.653421e-03]]
+Positions sample: [[0.  0. ]
+ [1.  1. ]
+ [3.9 1.2]]
+Final x tensor shape: torch.Size([80, 3])
+Final pos tensor shape: torch.Size([80, 2])
+
+Tipo de data: <class 'torch_geometric.data.data.Data'>
+Atributos de data: ['__abstractmethods__', '__annotations__', '__call__', '__cat_dim__', '__class__', '__contains__', '__copy__', '__deepcopy__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__inc__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__setstate__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '__weakref__', '_abc_impl', '_edge_attr_cls', '_edge_to_layout', '_edges_to_layout', '_get_edge_index', '_get_tensor', '_get_tensor_size', '_multi_get_tensor', '_put_edge_index', '_put_tensor', '_remove_edge_index', '_remove_tensor', '_store', '_tensor_attr_cls', '_to_type', 'apply', 'apply_', 'batch', 'clone', 'coalesce', 'concat', 'contains_isolated_nodes', 'contains_self_loops', 'contiguous', 'coo', 'cpu', 'csc', 'csr', 'cuda', 'debug', 'detach', 'detach_', 'edge_attr', 'edge_attrs', 'edge_index', 'edge_stores', 'edge_subgraph', 'edge_weight', 'face', 'from_dict', 'generate_ids', 'get_all_edge_attrs', 'get_all_tensor_attrs', 'get_edge_index', 'get_tensor', 'get_tensor_size', 'has_isolated_nodes', 'has_self_loops', 'is_coalesced', 'is_cuda', 'is_directed', 'is_edge_attr', 'is_node_attr', 'is_sorted', 'is_sorted_by_time', 'is_undirected', 'keys', 'multi_get_tensor', 'node_attrs', 'node_offsets', 'node_stores', 'num_edge_features', 'num_edge_types', 'num_edges', 'num_faces', 'num_features', 'num_node_features', 'num_node_types', 'num_nodes', 'pin_memory', 'pos', 'put_edge_index', 'put_tensor', 'record_stream', 'remove_edge_index', 'remove_tensor', 'requires_grad_', 'share_memory_', 'size', 'snapshot', 'sort', 'sort_by_time', 'stores', 'stores_as', 'subgraph', 'time', 'to', 'to_dict', 'to_heterogeneous', 'to_namedtuple', 'up_to', 'update', 'update_tensor', 'validate', 'view', 'x', 'y']
+=== DIAGNÓSTICO DE DATOS ===
+data.pos shape: torch.Size([80, 2])
+data.pos dimensiones: 2
+Número de nodos: 80
+Número de aristas: 336
+
+Datos del batch:
+batch.x shape: torch.Size([1])
+batch.pos shape: torch.Size([80, 2])
+batch.batch shape: torch.Size([80])
+
+Error en el modelo: Tensors must have same number of dimensions: got 1 and 2
+Intentando con métodos alternativos...
+Método 2 falló: expected Tensor as element 0 in argument 0, but got int
+Método 3 falló: expected Tensor as element 0 in argument 0, but got int
+Todos los métodos fallaron. Revisar la arquitectura del modelo.
+x0 shape después de concatenar: torch.Size([78, 5])
+x0 shape después de concatenar: torch.Size([78, 5])
+Shape de data.x antes de batch: torch.Size([79, 3])
+x0 shape después de concatenar: torch.Size([79, 5])
+Shape de data.x antes de batch: torch.Size([79, 5])
+x0 shape después de concatenar: torch.Size([79, 7])
+Shape de data.x antes de batch: torch.Size([79, 3])
+Shape batch.x: torch.Size([79, 3])
+x0 shape después de concatenar: torch.Size([79, 5])
+Shape de data.x antes de batch: torch.Size([79, 1])
+Shape batch.x: torch.Size([79, 1])
+x0 shape después de concatenar: torch.Size([79, 3])
+Predicción del modelo: 4 (confianza: 96.45%)
+Shape de data.x antes de batch: torch.Size([79, 1])
+Shape batch.x: torch.Size([79, 1])
+x0 shape después de concatenar: torch.Size([79, 3])
+Predicción del modelo: 4 (confianza: 96.45%)
+Shape de data.x antes de batch: torch.Size([79, 3])
+x0 shape después de concatenar: torch.Size([79, 5])
+Shape de data.x antes de batch: torch.Size([79, 1])
+Shape batch.x: torch.Size([79, 1])
+x0 shape después de concatenar: torch.Size([79, 3])
+Predicción del modelo: 4 (confianza: 96.45%)
+Shape de data.x antes de batch: torch.Size([79, 1])
+Shape batch.x: torch.Size([79, 1])
+x0 shape después de concatenar: torch.Size([79, 3])
+Predicción del modelo: 4 (confianza: 96.45%)
+Shape de data.x antes de batch: torch.Size([79, 1])
+Shape batch.x: torch.Size([79, 1])
+x0 shape después de concatenar: torch.Size([79, 3])
+Predicción del modelo: 4 (confianza: 96.45%)
+Shape de data.x antes de batch: torch.Size([79, 1])
+Shape batch.x: torch.Size([79, 1])
+x0 shape después de concatenar: torch.Size([79, 3])
+Predicción del modelo: 4 (confianza: 96.45%)
+Shape de data.x antes de batch: torch.Size([78, 1])
+Shape batch.x: torch.Size([78, 1])
+x0 shape después de concatenar: torch.Size([78, 3])
+Predicción del modelo: 4 (confianza: 97.00%)
+Shape de data.x antes de batch: torch.Size([79, 1])
+Shape batch.x: torch.Size([79, 1])
+x0 shape después de concatenar: torch.Size([79, 3])
+Predicción del modelo: 4 (confianza: 96.45%)
+Shape de data.x antes de batch: torch.Size([78, 1])
+Shape batch.x: torch.Size([78, 1])
+x0 shape después de concatenar: torch.Size([78, 3])
+Predicción del modelo: 4 (confianza: 97.00%)
+Shape de data.x antes de batch: torch.Size([77, 1])
+Shape batch.x: torch.Size([77, 1])
+x0 shape después de concatenar: torch.Size([77, 3])
+Predicción del modelo: 6 (confianza: 98.62%)
+Shape de data.x antes de batch: torch.Size([77, 1])
+Shape batch.x: torch.Size([77, 1])
+x0 shape después de concatenar: torch.Size([77, 3])
+Predicción del modelo: 6 (confianza: 47.46%)
+Shape de data.x antes de batch: torch.Size([78, 1])
+Shape batch.x: torch.Size([78, 1])
+x0 shape después de concatenar: torch.Size([78, 3])
+Predicción del modelo: 4 (confianza: 70.00%)
+Shape de data.x antes de batch: torch.Size([71, 1])
+Shape batch.x: torch.Size([71, 1])
+x0 shape después de concatenar: torch.Size([71, 3])
+Predicción del modelo: 4 (confianza: 97.01%)
+Shape de data.x antes de batch: torch.Size([77, 1])
+Shape batch.x: torch.Size([77, 1])
+x0 shape después de concatenar: torch.Size([77, 3])
+Predicción del modelo: 6 (confianza: 69.02%)
+Shape de data.x antes de batch: torch.Size([79, 1])
+Shape batch.x: torch.Size([79, 1])
+x0 shape después de concatenar: torch.Size([79, 3])
+Predicción del modelo: 4 (confianza: 81.68%)
+Shape de data.x antes de batch: torch.Size([77, 1])
+Shape batch.x: torch.Size([77, 1])
+x0 shape después de concatenar: torch.Size([77, 3])
+Predicción del modelo: 2 (confianza: 53.49%)
+Shape de data.x antes de batch: torch.Size([75, 1])
+Shape batch.x: torch.Size([75, 1])
+x0 shape después de concatenar: torch.Size([75, 3])
+Predicción del modelo: 2 (confianza: 78.35%)
+Shape de data.x antes de batch: torch.Size([76, 1])
+Shape batch.x: torch.Size([76, 1])
+x0 shape después de concatenar: torch.Size([76, 3])
+Predicción del modelo: 2 (confianza: 69.78%)
+Shape de data.x antes de batch: torch.Size([71, 1])
+Shape batch.x: torch.Size([71, 1])
+x0 shape después de concatenar: torch.Size([71, 3])
+Predicción del modelo: 6 (confianza: 95.27%)
+Shape de data.x antes de batch: torch.Size([78, 1])
+Shape batch.x: torch.Size([78, 1])
+x0 shape después de concatenar: torch.Size([78, 3])
+Predicción del modelo: 4 (confianza: 94.74%)
+Shape de data.x antes de batch: torch.Size([69, 1])
+Shape batch.x: torch.Size([69, 1])
+x0 shape después de concatenar: torch.Size([69, 3])
+Predicción del modelo: 4 (confianza: 97.23%)
+Shape de data.x antes de batch: torch.Size([72, 1])
+Shape batch.x: torch.Size([72, 1])
+x0 shape después de concatenar: torch.Size([72, 3])
+Predicción del modelo: 4 (confianza: 98.09%)
+Shape de data.x antes de batch: torch.Size([71, 1])
+Shape batch.x: torch.Size([71, 1])
+x0 shape después de concatenar: torch.Size([71, 3])
+Predicción del modelo: 2 (confianza: 60.71%)
+Shape de data.x antes de batch: torch.Size([78, 1])
+Shape batch.x: torch.Size([78, 1])
+x0 shape después de concatenar: torch.Size([78, 3])
+Predicción del modelo: 4 (confianza: 70.00%)
+Shape de data.x antes de batch: torch.Size([77, 1])
+Shape batch.x: torch.Size([77, 1])
+x0 shape después de concatenar: torch.Size([77, 3])
+Predicción del modelo: 6 (confianza: 47.46%)
+Shape de data.x antes de batch: torch.Size([77, 1])
+Shape batch.x: torch.Size([77, 1])
+x0 shape después de concatenar: torch.Size([77, 3])
+Predicción del modelo: 2 (confianza: 53.49%)
+Shape de data.x antes de batch: torch.Size([71, 1])
+Shape batch.x: torch.Size([71, 1])
+x0 shape después de concatenar: torch.Size([71, 3])
+Predicción del modelo: 2 (confianza: 60.71%)

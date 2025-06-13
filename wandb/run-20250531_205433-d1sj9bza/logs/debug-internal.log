@@ -1,0 +1,21 @@
+{"time":"2025-05-31T20:54:33.2708457-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\Usuario\\Trabajo Discretas pt2\\wandb\\run-20250531_205433-d1sj9bza\\logs\\debug-core.log"}
+{"time":"2025-05-31T20:54:33.601622-06:00","level":"INFO","msg":"created new stream","id":"d1sj9bza"}
+{"time":"2025-05-31T20:54:33.6021644-06:00","level":"INFO","msg":"stream: started","id":"d1sj9bza"}
+{"time":"2025-05-31T20:54:33.6021644-06:00","level":"INFO","msg":"handler: started","stream_id":"d1sj9bza"}
+{"time":"2025-05-31T20:54:33.6021644-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"d1sj9bza"}
+{"time":"2025-05-31T20:54:33.6021644-06:00","level":"INFO","msg":"sender: started","stream_id":"d1sj9bza"}
+{"time":"2025-05-31T20:54:33.8199794-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T10:46:05.155176-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/cifar-10-gnn-classification/d1sj9bza/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-01T10:46:07.3091897-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/cifar-10-gnn-classification/d1sj9bza/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-01T10:46:11.675966-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-01T10:46:12.2770231-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/cifar-10-gnn-classification/d1sj9bza/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-01T10:46:13.8290373-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-01T10:46:18.3191984-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-01T11:54:02.0002511-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-01T11:54:02.0152375-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-01T11:54:02.0252771-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-01T11:54:02.0434175-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-01T11:54:02.059465-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-01T11:54:02.0733721-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-01T11:54:02.0906118-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-01T11:54:02.1048582-06:00","level":"INFO","msg":"Resuming system monitor"}

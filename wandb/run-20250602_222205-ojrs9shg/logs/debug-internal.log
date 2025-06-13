@@ -1,0 +1,29 @@
+{"time":"2025-06-02T22:22:06.8788045-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\Usuario\\Trabajo Discretas pt2\\wandb\\run-20250602_222205-ojrs9shg\\logs\\debug-core.log"}
+{"time":"2025-06-02T22:22:07.1913003-06:00","level":"INFO","msg":"created new stream","id":"ojrs9shg"}
+{"time":"2025-06-02T22:22:07.1913003-06:00","level":"INFO","msg":"stream: started","id":"ojrs9shg"}
+{"time":"2025-06-02T22:22:07.1913003-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"ojrs9shg"}
+{"time":"2025-06-02T22:22:07.1913003-06:00","level":"INFO","msg":"handler: started","stream_id":"ojrs9shg"}
+{"time":"2025-06-02T22:22:07.1913003-06:00","level":"INFO","msg":"sender: started","stream_id":"ojrs9shg"}
+{"time":"2025-06-02T22:22:07.3625535-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-02T23:49:37.9386643-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/mnist-superpixels-gnn-classification/ojrs9shg/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-02T23:49:39.9587747-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/mnist-superpixels-gnn-classification/ojrs9shg/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-02T23:49:45.8321311-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.100.6:51254->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-06-03T04:29:49.5226563-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/mnist-superpixels-gnn-classification/ojrs9shg/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-03T04:29:51.8403335-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/mnist-superpixels-gnn-classification/ojrs9shg/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-03T04:29:56.747314-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/mnist-superpixels-gnn-classification/ojrs9shg/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-03T04:30:06.2655063-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.100.6:59719->35.186.228.49:443: wsarecv: An existing connection was forcibly closed by the remote host."}
+{"time":"2025-06-03T08:21:17.519198-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/mnist-superpixels-gnn-classification/ojrs9shg/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-03T08:21:19.7806128-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/mnist-superpixels-gnn-classification/ojrs9shg/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-03T08:21:23.9345254-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/efrain-retana-segura-universidad-de-costa-rica/mnist-superpixels-gnn-classification/ojrs9shg/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-03T08:21:23.9594186-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-03T08:21:26.0065507-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-03T08:21:30.6692507-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-06-03T09:51:47.6055296-06:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-03T09:51:47.6055296-06:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-03T09:51:48.6285042-06:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.1190342},{"desc":"uploading wandb-summary.json","runtime_seconds":0.1190342}],"total_operations":2}}
+{"time":"2025-06-03T09:51:48.9518317-06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-03T09:51:49.368365-06:00","level":"INFO","msg":"stream: closing","id":"ojrs9shg"}
+{"time":"2025-06-03T09:51:49.368365-06:00","level":"INFO","msg":"handler: closed","stream_id":"ojrs9shg"}
+{"time":"2025-06-03T09:51:49.368365-06:00","level":"INFO","msg":"sender: closed","stream_id":"ojrs9shg"}
+{"time":"2025-06-03T09:51:49.368365-06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ojrs9shg"}
+{"time":"2025-06-03T09:51:49.368365-06:00","level":"INFO","msg":"stream: closed","id":"ojrs9shg"}

@@ -1,0 +1,11 @@
+{"time":"2025-06-03T09:51:49.3789243-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\Usuario\\Trabajo Discretas pt2\\wandb\\run-20250603_095147-5f5jjeme\\logs\\debug-core.log"}
+{"time":"2025-06-03T09:51:49.7291328-06:00","level":"INFO","msg":"created new stream","id":"5f5jjeme"}
+{"time":"2025-06-03T09:51:49.7291328-06:00","level":"INFO","msg":"stream: started","id":"5f5jjeme"}
+{"time":"2025-06-03T09:51:49.7291328-06:00","level":"INFO","msg":"handler: started","stream_id":"5f5jjeme"}
+{"time":"2025-06-03T09:51:49.7291328-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"5f5jjeme"}
+{"time":"2025-06-03T09:51:49.7291328-06:00","level":"INFO","msg":"sender: started","stream_id":"5f5jjeme"}
+{"time":"2025-06-03T09:51:49.9692838-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-03T09:54:03.6686478-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-03T09:54:03.6711655-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-03T09:54:03.7101655-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-03T09:54:03.7608326-06:00","level":"INFO","msg":"Resuming system monitor"}

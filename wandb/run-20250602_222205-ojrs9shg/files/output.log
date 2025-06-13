@@ -1,0 +1,163 @@
+Época 1/50
+Época 2/50
+Época 3/50
+Época 4/50
+Época 5/50
+Época 6/50
+Época 7/50
+Época 8/50
+Época 9/50
+Época 10/50
+Época 11/50
+Época 12/50
+Época 13/50
+Época 14/50
+Época 15/50
+Época 16/50
+Época 17/50
+Época 18/50
+Época 19/50
+Época 20/50
+Época 21/50
+Época 22/50
+Época 23/50
+Época 24/50
+Época 25/50
+Época 26/50
+Época 27/50
+Época 28/50
+Época 29/50
+Época 30/50
+Época 31/50
+Época 32/50
+Época 33/50
+Época 34/50
+Época 35/50
+Época 36/50
+Época 37/50
+Época 38/50
+Época 39/50
+Época 40/50
+Época 41/50
+Época 42/50
+Época 43/50
+Época 44/50
+Época 45/50
+Época 46/50
+Época 47/50
+Época 48/50
+Época 49/50
+Época 50/50
+Modelo guardado como 'modelo_gnn_mnist.pth'
+100%|██████████| 9.91M/9.91M [00:02<00:00, 4.48MB/s]
+100%|██████████| 28.9k/28.9k [00:00<00:00, 392kB/s]
+100%|██████████| 1.65M/1.65M [00:00<00:00, 3.46MB/s]
+100%|██████████| 4.54k/4.54k [00:00<00:00, 1.81MB/s]
+=== Información del Dataset ===
+Características del nodo (x): torch.Size([75, 1])
+Posiciones (pos): torch.Size([75, 2])
+Dimensiones concatenadas: torch.Size([75, 3])
+Número de nodos: 75
+Aristas: torch.Size([2, 1399])
+Etiqueta: tensor([5])
+Dimensiones de entrada correctas: 3
+Predicción: 0
+=== Información del Dataset ===
+Características del nodo (x): torch.Size([75, 1])
+Posiciones (pos): torch.Size([75, 2])
+Dimensiones concatenadas: torch.Size([75, 3])
+Número de nodos: 75
+Aristas: torch.Size([2, 1399])
+Etiqueta: tensor([5])
+Dimensiones de entrada correctas: 3
+=== Información del Dataset ===
+Características del nodo (x): torch.Size([75, 1])
+Posiciones (pos): torch.Size([75, 2])
+Dimensiones concatenadas: torch.Size([75, 3])
+Número de nodos: 75
+Aristas: torch.Size([2, 1399])
+Etiqueta: tensor([5])
+Dimensiones de entrada correctas: 3
+Etiqueta real: 7
+Predicción del modelo: 6
+=== Información del Dataset ===
+Características del nodo (x): torch.Size([75, 1])
+Posiciones (pos): torch.Size([75, 2])
+Dimensiones concatenadas: torch.Size([75, 3])
+Número de nodos: 75
+Aristas: torch.Size([2, 1399])
+Etiqueta: tensor([5])
+Dimensiones de entrada correctas: 3
+Etiqueta real: 7
+Predicción del modelo: 6
+Etiqueta real: 7
+Predicción del modelo: 6
+Etiqueta real: 7
+Predicción del modelo: 6
+torch.Size([1, 28, 28])
+torch.Size([1, 28, 28])
+=== Información del Dataset ===
+Características del nodo (x): torch.Size([75, 1])
+Posiciones (pos): torch.Size([75, 2])
+Dimensiones concatenadas: torch.Size([75, 3])
+Número de nodos: 75
+Aristas: torch.Size([2, 1399])
+Etiqueta: tensor([5])
+Dimensiones de entrada correctas: 3
+Etiqueta real: 7
+Predicción del modelo: 6
+Encontrada imagen con etiqueta 4 en índice 4
+Etiqueta real: 4
+Predicción del modelo: 6
+Encontrada imagen con etiqueta 6 en índice 11
+Etiqueta real: 6
+Predicción del modelo: 6
+Encontrada imagen con etiqueta 4 en índice 4
+=== Información del Dataset ===
+Características del nodo (x): torch.Size([75, 1])
+Posiciones (pos): torch.Size([75, 2])
+Dimensiones concatenadas: torch.Size([75, 3])
+Número de nodos: 75
+Aristas: torch.Size([2, 1399])
+Etiqueta: tensor([5])
+Dimensiones de entrada correctas: 3
+Etiqueta real: 4
+Predicción del modelo: 6
+=== Información del Dataset ===
+Características del nodo (x): torch.Size([75, 1])
+Posiciones (pos): torch.Size([75, 2])
+Dimensiones concatenadas: torch.Size([75, 3])
+Número de nodos: 75
+Aristas: torch.Size([2, 1399])
+Etiqueta: tensor([5])
+Dimensiones de entrada correctas: 3
+Etiqueta real: 0
+Predicción del modelo: 6
+Salida raw (logits o probs): tensor([[-23.5923,   2.7886,   9.7279,  -2.9485,  -9.4144, -11.6587,  11.2101,
+           6.0842,  -7.4788, -10.1433]])
+Etiqueta real: 0
+Predicción del modelo: 6
+Label: tensor([5])
+Número de nodos: 75
+Dimensiones de características: torch.Size([75, 1])
+Posiciones: torch.Size([75, 2])
+=== Información del Dataset ===
+Características del nodo (x): torch.Size([75, 1])
+Posiciones (pos): torch.Size([75, 2])
+Dimensiones concatenadas: torch.Size([75, 3])
+Número de nodos: 75
+Aristas: torch.Size([2, 1399])
+Etiqueta: tensor([5])
+Dimensiones de entrada correctas: 3
+Label: tensor([5])
+Número de nodos: 75
+Dimensiones de características: torch.Size([75, 1])
+Posiciones: torch.Size([75, 2])
+=== Información del Dataset ===
+Características del nodo (x): torch.Size([75, 1])
+Posiciones (pos): torch.Size([75, 2])
+Dimensiones concatenadas: torch.Size([75, 3])
+Número de nodos: 75
+Aristas: torch.Size([2, 1399])
+Etiqueta: tensor([5])
+Dimensiones de entrada correctas: 3
