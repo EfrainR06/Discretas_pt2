@@ -14,6 +14,7 @@ Debido a las limitaciones de almacenamiento en GitHub (aproximadamente 2 - 4 GB)
 ---
 
 ## Descripción del Trabajo 💡
+- Trabajo de investigación sobre **clasificación de números manuscritos del 0 al 9**.
 - Proyecto desarrollado en **Jupyter Notebooks**.
 - Utilicé **PyTorch** y el dataset **MNIST Superpixels**.
 - El objetivo principal fue analizar el **accuracy** y el **train loss** del modelo.
