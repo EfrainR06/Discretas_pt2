@@ -30,4 +30,4 @@ Debido a las limitaciones de almacenamiento en GitHub (aproximadamente 2 - 4 GB)
 
 ---
 
-## ¡Muchas gracias por la oportunidad! 🙌
+## ¡Muchas gracias por leer! 🙌
